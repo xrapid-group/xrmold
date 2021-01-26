@@ -63,12 +63,13 @@ This is the procedure that was used to mount cultures from Pétri dishes.
 
 **Important: we have noticed that the stain diffuses through the spores slowly, which confuses the AI after some time. To obtain the best results, the slides should be processed through xRmold no more than 15 minutes after being mounted in LPCB.**
 #### 3.1.6. Where to get LPCB
-- Lactophenol Cotton Blue, Fungal Stain, 15ml, by Hardy Diagnostics: [https://www.amazon.com/Lactophenol-Cotton-Fungal-Hardy-Diagnostics/dp/B0732CDHHT]
-- Lactophenol blue solution (Merck/Sigma Aldrich): [https://www.sigmaaldrich.com/catalog/product/sial/61335?lang=fr&region=FR]
+- Lactophenol Cotton Blue, Fungal Stain, 15ml, by [Hardy Diagnostics][1]
+- Lactophenol blue solution [Merck/Sigma Aldrich][2]
 
 ### 3.2. Mount
 xRmold is set to analyze samples that have been laid out **horizontally** only. The microscope will scan 150 fields horizontally to capture a full trace of 10mmx1mm. The next Figure shows the correct geometry for the mount.
-(img)
+
+![][image-1]
 
 **Note**: for the sake of simplicity, it is not envisaged to enable a vertical mount at the moment. Do not hesitate to contact us if this is standard practice in your laboratory. 
 
@@ -81,10 +82,11 @@ xRmold operates in standard transmitted light microscopy (upright microscope), w
 xRmold uses the same Olympus x40 objective for mold diagnostic as xRfiber: this phase contrast objective is also perfect for transmitted light microscopy.
 
 **Useful tip**: as we are working around some automated light source intensity setting, we have found it useful to use the phase ring to get the focus on the spores first, and then slide it out before starting the analysis.
+
 ### 4.2. Koehler illumination
 While there is a certain leeway ni operating xRfiber with a quite-not-perfect illumination of the microscope (note: not for chysotile samples!), this is not the case for xRmold, where the condenser must be perfectly aligned and spaced vertically with the slide.
 
-We recommend that the user familiarizes with Koehler illumination by using the excellent app “Koehler Tutor”, which can be downloaded from the App Store at this link: [https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en] if it is not installed on your iPad already.
+We recommend that the user familiarizes with Koehler illumination by using the excellent app “Koehler Tutor”, which can be downloaded from the App Store at this [link][3] if it is not installed on your iPad already.
 ### 4.3. App installation
 The app is released via Diawi during the alpha/beta testing period, it will be available on the App Store afterwards. The user gets notified by email that a new version is available, with some release notes. The user also gets in his email and the iPad’s email the link to download the app.
 Once the link is tapped on the iPad or entered manually into Safari (the iPad’s web browser), a window offering to install the app is accessed.
@@ -139,3 +141,11 @@ Each specie is cultured and sampled at 3-5, 7-10 and 15 days on at least 3 slide
 The AI is tested and validated on independent sets from training, created using different slides from the same cultures.
 
 **Note**: it would be useful to have an independent validation set from field slides, we will welcome images without annotations but description to this effect. 
+
+[1]:	https://www.amazon.com/Lactophenol-Cotton-Fungal-Hardy-Diagnostics/dp/B0732CDHHT
+
+[2]:	https://www.sigmaaldrich.com/catalog/product/sial/61335?lang=fr&region=FR
+
+[3]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
+
+[image-1]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
