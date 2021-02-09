@@ -2,7 +2,7 @@
 
 Document version: 0.1 alpha
 
-App Version: 0.30.0 Build 31
+App Version: 0.32.0 Build 33
 
 ## 1. PURPOSE
 
@@ -175,9 +175,7 @@ The AI is tested and validated on independent sets from training, created using 
 **Note**: it would be useful to have an independent validation set from field slides, we will welcome images without annotations but description to this effect. 
 
 [1]:	https://www.amazon.com/Lactophenol-Cotton-Fungal-Hardy-Diagnostics/dp/B0732CDHHT
-
 [2]:	https://www.sigmaaldrich.com/catalog/product/sial/61335?lang=fr&region=FR
-
 [3]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
 
 [image-1]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
