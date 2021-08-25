@@ -569,7 +569,9 @@ The second parameters, named the `Steps Focus Difference` is provided to you or 
 
 The third parameter is presented as a visual. Microscope turrets ship with 4 or 5 holes for objectives. The number of holes is determined automatically. In the rare case the wrong number is detected, usually due to an error in mounting the objectives, tapping this button enables to change the number of holes.
 
-The next parameter is a switch that enables to have either a combined trace and focus finding, either have them separate. Thes
+The next parameter is a switch that enables to have either a combined trace and focus finding, either have them separate. These two modes are detailed in section 6.3.3.
+
+The final parameter is also a switch, to use Contextual analysis. The purpose of the contextual analysis is to reduce the number of unknown spores. When the AI is certain beyond a threshold established experimentally that certain species are present, it uses this information in contextual analysis to lower the acceptance threshold of similar spores. The contextual analysis is on by default, raw data can always be recovered in any case.
 
 #### 6.3.2.5. Institution
 
