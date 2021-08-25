@@ -539,3 +539,8 @@ The AI is tested and validated on independent sets from training, created using 
 [image-11]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_c.png
 [image-12]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_d.png
 [image-13]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_8.png
+[1]:	https://www.amazon.com/Lactophenol-Cotton-Fungal-Hardy-Diagnostics/dp/B0732CDHHT
+[2]:	https://www.sigmaaldrich.com/catalog/product/sial/61335?lang=fr&region=FR
+[3]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
+
+[image-1]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
