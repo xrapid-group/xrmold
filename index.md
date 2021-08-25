@@ -382,7 +382,7 @@ xRmold uses the same Olympus x40 objective for mold diagnostic as xRfiber: this 
 
 **Useful tip**: as we are working around some automated light source intensity setting, we have found it useful to use the phase ring to get the focus on the spores first, and then slide it out before starting the analysis.
 
-### Koehler illumination
+#### Koehler illumination
 While there is a certain leeway ni operating xRfiber with a quite-not-perfect illumination of the microscope (note: not for chysotile samples!), this is not the case for xRmold, where the condenser must be perfectly aligned and spaced vertically with the slide.
 
 We recommend that the user familiarizes with Koehler illumination by using the excellent app “Koehler Tutor”, which can be downloaded from the App Store at this [link][6] if it is not installed on your iPad already.
@@ -434,6 +434,8 @@ Figure 6.7. unbalanced (left) and perfectly flat orientations of the iPhone in i
 
 ## 6.2. Device (iPhone/iPad) setup
 
+### 6.2.1. Generic setup
+
 After going through Apple’s initialization guide, ensure the following:
 
 -   The device is logged into an iCloud account (this is required for location services to be active which is required for device use records).
@@ -450,9 +452,137 @@ Once the link is tapped on the iPad or entered manually into Safari (the iPad’
 
 **App Store update**: we recommend that the iPad is setup to auto-update the apps installed. This is performed nightly when the iPad is connected to the internet.
 
+### 6.2.2. Setting up the Ethernet connection
+When the microscope is to be operated through a wired connection, one follows the connection scheme described in 6.1.3. Irrespective of the connector that was provided in the package (availability of this connectors vary), the procedure will be the same:
+- in the iPad Settings, spot the “Ethernet” option when the USB-C adapter connects to the iPad
+- A blue “cable connection” icon will appear in the top bar and stay for about 5 seconds, then disappear
+- In the “Ethernet” thumb, under “Interfaces” the connector will appear
+- Getting into this connector settings will reveal options for “IPV4 ADDRESS”, “DNS” and “HTTP PROXY”
+- The correct settings are:
+	- IPV4 ADDRESS
+		- Configure IP: Manual
+		- IP address: 169.254.65.10
+		- Subnet mask: 255.255.0.0
+		- Router: 169.254.65.6
+	- DNS
+		- Configure DNS: Manual
+	- HTTP PROXY
+		- Configure Proxy: Off
+From that point onwards, when the Ethernet cable is connected to the iPad, the microscope will establish a network connection first.
+
+![][image-14]
+
+Video 6.1. setting up the Ethernet connection in iPad’s settings
+
+## 6.3. Operating the software
+
+The xRmold app has many features to facilitate not only the diagnostic, but also the review of results. We will now examine the various screens and functionalities of the app.
+
+### 6.3.1. Main screen
+
+#### 6.3.1.1. Establishing a connection
+
+When starting the app, the central button START MEASURE (5) is grayed out. After a few seconds, the app completes the connection to the microscope and is now ready to measure:
+
+-   the Bluetooth logo or its alternative Ethernet logo (1) is circled
+-   the large hexagonal START MEASURE (5) button turns white and animates to a pulsation.
+
+Notice that the Bluetooth logo (1) is more than just an icon: it is also a button that can be tapped again should the Bluetooth connection drop. It generally takes about 2-3 seconds to establish this connection.
+
+**NOTE**: the Bluetooth standard comes with a few drawbacks. One of those is the failure to resume a connection when a service has been lost for a duration of 30 seconds.
+
+Once a device is connected, the button (1) being circled, tapping the Bluetooth button again will show a pop up with the name of the device selected. In laboratory settings where more than one microscope can be connected via Bluetooth, this is used to change the iPhone/iPad assignment to another microscope.
+
+**NOTE**: the Bluetooth functionality lets us discover the device based on the strength of the signal. If two devices are more than one meter apart, the iPhone/iPad will find the correct microscope, i.e. the microscope it is sitting on. If devices are closer, some mixing or confusion of signals may occur, and the device will have to be checked and connected manually using the pop up menu.
+
+![][image-15]
+
+Figure 6.10. Main screen in the disconnected state (left), Bluetooth connected state (middle) and Ethernet connected state (right) 
+
+#### 6.3.1.2. Elements
+
+##### Operator
+
+It is good practice, and **requested by most standards**, to have the operator (3) identified during testing. xRmold offers the capability to have more than one operator registered on a device. When multiple operators are registered, the right and left arrows (2) are visible and circled, indicating that they can be tapped to select the next or previous operator in the list. When only a single operator is listed, the arrows do not appear. Alternatively, one can swipe left and right on the name of the operator and this will present the previous/next operator in the list.
+
+Entering or changing an operator is done through the Settings option of the app.
+
+##### Settings button
+
+The Settings button (4) is always active, it leads to the parameters and options of the app. Will be used to set the standard, the operator(s) and optionally a printer.
+
+##### Statistics line
+
+The number of tests run this month (6) and today (7) are displayed on this line. These numbers are dynamic, they reset at the end of the day and the beginning of the month.
+
+The last three tests are displayed in boxes (9) under the statistics, and can be used to navigate quickly to the detailed results of the test.
+
+##### Tests log
+
+The Tests Log button (8) props up the log of all the tests ever carried out on the device. Because the microscope does not keep in memory the record of the tests performed, but rather just the global count, the tests log may be different if two devices are used to drive the same microscope.
+
+##### Light button
+
+The light button (10) is used to switch on/off the microscope light source. When the microscope is connected the state of the microscope is highlighted under the button.
+
+### 6.3.2. Settings screen
+
+#### 6.3.2.1. Overview
+
+The settings/options have 4 main categories, reached by tapping on the segmented control: Practitioner (1), Print (2), Parameters (3), Institution (4). Parameters are related to the motorized turret, and only accessible when the microscope is connected to the iPad via an Ethernet cable.
+
+![][image-16]
+
+Figure 6.11. Settings screens with the Practitioner (left), Diagnostic (center left),  Print (center right) and Institution settings.
+
+Notice at the bottom (8) the version and Build number between parentheses — communicate those to xRapid when requesting support.
+
+All changes need to be validated, by hitting the Save button at the bottom right of the screen. Cancelling restores the last saved options.
+
+#### 6.3.2.2. Practitioner
+
+All the users informations are private, and not exchanged with xRapid-Group: they are mainly used for app-generated reports, and QC/QA purposes. The printed, PDF or CSV reports will have all the information the user has entered in this section.
+
+**NOTE**: For QC purposes it is impossible to change the name of the operator of a test once the test has started.
+
+One must have at least one operator per device. Fill in contact details accordingly, and hit the Save button at the bottom right.
+
+Tap the button (5) Add New Practitioner to have multiple operators on a single device: it will clear out the name field, and you will be free to Save this additional operator. There is no limit to the number of operators that one device can hold. On the other hand, there is a limit on the number of addresses (only one) an institution can have.
+
+One can switch the user from the Main screen, or using the small arrows on the left and right of the name.
+
+**NOTE**: it is good practice to change the operator of the software whenever the physical operator of the xRfiber microscope changes. At the same time, all the QC checks should be passed before a new run of slides is carried out.
+
+#### 6.3.2.3. Print
+
+The easiest way to generate reports is to print them directly from the app. xRfiber has the capability to print to any wireless networked printer in a variety of formats. Tapping the printer or Add printer button will take you to the iOS print menu — this is a system feature.
+
+xRfiber can print reports in color or monochrome, on A4 and US Letter paper. Should your printer handle double-sided prints, xRfiber will comply.
+
+While most users want to export their results to a CSV (Comma Separated Values) file compatible with Excel or Numbers, it is useful for quality purposes to keep a daily log of the machine, and print it out at the end of the day. xRfiber facilitates this operation by letting the user select all the records of the day in the Tests Log to export or print them out.
+
+#### 6.3.2.3. Parameters
+
+Parameters are only related to the microscope. They enable the reading of the firmware version — the current firmware running on the microscope card. 
+
+The second parameters, named the `Steps Focus Difference` is provided to you or initialized when purchasing a microscope. Because not all microscope turrets and/or objectives are created equal, there is generally a difference between the focus positions of the 40x and 10x objectives. When performing a trace finding, xRmold automatically adjusts between the focus positions of 40x and 10x, to find the best focus on the trace. 
+
+The third parameter is presented as a visual. Microscope turrets ship with 4 or 5 holes for objectives. The number of holes is determined automatically. In the rare case the wrong number is detected, usually due to an error in mounting the objectives, tapping this button enables to change the number of holes.
+
+The next parameter is a switch that enables to have either a combined trace and focus finding, either have them separate. Thes
+
+#### 6.3.2.5. Institution
+
+This last setting is where the institution logs in and eventually changes its coordinates. Those are used to produce customized reports with the name, address and logo of the institution. The username and password are fixed, and provided to the user by xRapid during installation. To login or logout, one needs to swipe down to access the button.
+
+### 6.3.3. Measurement screen
+
+Once the device is properly setup, one can proceed to performing diagnostics. The Measurement screen is obtained when the hexagonal Start Measurement button is tapped on the Main screen.
+
+
 ### 4.4. First step: logging in
 
-In the xRmold app, from the main screen, open the “Settings” by tapping the upper right button, and get to the last thumb “Institution”. Normally you should not be logged in as an institution when first launching the app. XRapid creates an account for your institution and delivers by email a username and password. The easiest is to copy the username and then the password from the email you have received. Upon logging in, your institution details, logo, etc... will be populated.
+In the xRmold app, from the main screen, open the “Settings” by tapping the upper right button, and get to the last thumb “Institution”. Normally you should not be logged in as an institution when first launching the app. xRapid creates an account for your institution and delivers by email a username and password. The easiest is to copy the username and then the password from the email you have received. Upon logging in, your institution details, logo, etc... will be populated.
 
 This step is usually performed during installation and training.
 
@@ -539,8 +669,6 @@ The AI is tested and validated on independent sets from training, created using 
 [image-11]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_c.png
 [image-12]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_d.png
 [image-13]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_8.png
-[1]:	https://www.amazon.com/Lactophenol-Cotton-Fungal-Hardy-Diagnostics/dp/B0732CDHHT
-[2]:	https://www.sigmaaldrich.com/catalog/product/sial/61335?lang=fr&region=FR
-[3]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
-
-[image-1]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
+[image-14]:	https://xrapid-group.github.io/xrfiber/Pictures/Ethernet_connection.mp4
+[image-15]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_9.png
+[image-16]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_10.png
