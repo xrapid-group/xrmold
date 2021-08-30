@@ -22,7 +22,7 @@ If an information is requested, particularly if relevant and not found in the do
 
 ## 2.1. Main characteristics
 
-xRapid Group has developed a fully automated microscope, patent pending, which consists in a phase contrast microscope (PCM) retrofitted with a set of motors to control the stage movement in three orthogonal directions (x, y and z) with various accuracies. For mold spores analysis, the microscope is operated in bright field mode (the phase contrast ring is removed from the phase condenser). This enables a full sample to be imaged within a few minutes. A series of images are taken by an iPad at increasing depths, from which an autofocus measure is calculated to image the next field. At the same time, a convolutional neural network (CNN) is used for our AI to characterize the objects in the field of view. All the analysis is performed locally on the device, none of the images are uploaded to a server, so that remote work in a poorly connected area is permitted. While we usually refer to AI as Deep Learning, one should notice that xRmold system is not self-learning: all the data has been extracted by humans, and validated by humans. The system shipped is not evolving between updates of the app, which enables to guarantee its performance and pass a certification.
+xRapid Group has developed a fully automated microscope, patent pending, which consists in a phase contrast microscope (PCM) retrofitted with a set of motors to control the stage movement in three orthogonal directions (x, y and z) with various accuracies. For mold spores analysis, the microscope is operated in bright field mode (the phase contrast ring is removed from the phase condenser). This enables a full sample to be imaged within a few minutes. A series of images are taken by an iPad at increasing depths, from which an autofocus measure is calculated to image the next field. At the same time, a convolutional neural network (CNN) is used for our AI to characterize the objects in the field of view. All the analysis is performed locally on the device, none of the images are uploaded to a server, so that remote work in a poorly connected area is permitted. While we usually refer to AI as Deep Learning, one should notice that xRmold system is not self-learning: all the data has been extracted by humans, and validated by humans. The system shipped is not evolving between updates of the app, which enables to guarantee its performance and pass an eventual certification.
 
 ## 2.2. Equipment specifications
 
@@ -92,29 +92,9 @@ xRapid Group has developed a fully automated microscope, patent pending, which c
 -   Set of Allen/Torx wrench
 -   Template for slide preparation
 
-## 2.3. Standards and paths
+## 2.3. Standards
 
-xRfiber supports a large number of standards, which come with specificities, whether they are about the objects counted (for example, some standards specifically request *not* to count objects that are touching debris, while others have different strategies), or about the path that one must apply to scan the sample.
-
-The following standards are currently supported:
-
--   NIOSH 7400 (Type A & B)
--   OSHA id 160
--   NOSHC-3003
--   IRSST 243-1
--   HSG248
--   NF X43-269
--   NBN T 96-102
-
-Four sample geometries and therefore paths are supported: quarter disk oriented right or up, and half disk oriented horizontally or vertically.
-
-\*\*\*\*\*\*\*\*\*\*\*\*\*\* ## 2. REQUIREMENTS
-- xRmicroscope: the xRmicroscope Mark I used for xRfiber, motorized on three axes (X, Y and Z), operated via Bluetooth or Ethernet.
-	- Firmware version: 1.10.01, will be checked remotely by xRapid
-- iPad: compatible models are iPad Pro 10.5”, iPad Pro 11” (2019), iPad Air 4
-- iPad support/cradle compatible with your device
-- Minimum iOS requirement: current version, i.e. iOS 14.3
----- 
+xRmold supports the **ASTM D7391** standard. Do not hesitate to contact us should any other standard be required for operation.
 
 ## 2.4. SLIDE PREPARATION
 The analysis process was designed for Air-O-Cell and Zefon type slides — spore traps. 
@@ -193,8 +173,6 @@ xRmold is set to analyze samples that have been laid out **horizontally** only. 
 **TODO: this figure must be changed to reflect the 50 fields option**
 
 **Note**: for the sake of simplicity, it is not envisaged to enable a vertical mount at the moment. Do not hesitate to contact us if this is standard practice in your laboratory. 
-
-**Note 2**: half measurement not available in first alpha version, undergoing testing in our laboratory for now.
 
 # 3. SAFETY NOTES
 
@@ -380,9 +358,8 @@ xRmold operates in standard transmitted light microscopy (upright microscope), w
 
 xRmold uses the same Olympus x40 objective for mold diagnostic as xRfiber: this phase contrast objective is also perfect for transmitted light microscopy.
 
-**Useful tip**: as we are working around some automated light source intensity setting, we have found it useful to use the phase ring to get the focus on the spores first, and then slide it out before starting the analysis.
-
 #### Koehler illumination
+
 While there is a certain leeway ni operating xRfiber with a quite-not-perfect illumination of the microscope (note: not for chysotile samples!), this is not the case for xRmold, where the condenser must be perfectly aligned and spaced vertically with the slide.
 
 We recommend that the user familiarizes with Koehler illumination by using the excellent app “Koehler Tutor”, which can be downloaded from the App Store at this [link][6] if it is not installed on your iPad already.
@@ -565,7 +542,7 @@ While most users want to export their results to a CSV (Comma Separated Values) 
 
 Parameters are only related to the microscope. They enable the reading of the firmware version — the current firmware running on the microscope card. 
 
-The second parameters, named the `Steps Focus Difference` is provided to you or initialized when purchasing a microscope. Because not all microscope turrets and/or objectives are created equal, there is generally a difference between the focus positions of the 40x and 10x objectives. When performing a trace finding, xRmold automatically adjusts between the focus positions of 40x and 10x, to find the best focus on the trace. 
+The second parameters, named the `Steps Focus Difference` is provided to you or initialized when purchasing a microscope. Because not all microscope turrets and/or objectives are created equal, there is generally a difference between the focus positions of the 40x and 10x objectives. When performing a trace finding, xRmold automatically adjusts between the focus positions of 40× and 10×, to find the best focus on the trace. 
 
 The third parameter is presented as a visual. Microscope turrets ship with 4 or 5 holes for objectives. The number of holes is determined automatically. In the rare case the wrong number is detected, usually due to an error in mounting the objectives, tapping this button enables to change the number of holes.
 
@@ -577,55 +554,92 @@ The final parameter is also a switch, to use Contextual analysis. The purpose of
 
 This last setting is where the institution logs in and eventually changes its coordinates. Those are used to produce customized reports with the name, address and logo of the institution. The username and password are fixed, and provided to the user by xRapid during installation. To login or logout, one needs to swipe down to access the button.
 
-### 6.3.3. Measurement screen
-
-Once the device is properly setup, one can proceed to performing diagnostics. The Measurement screen is obtained when the hexagonal Start Measurement button is tapped on the Main screen.
-
-
-### 4.4. First step: logging in
-
-In the xRmold app, from the main screen, open the “Settings” by tapping the upper right button, and get to the last thumb “Institution”. Normally you should not be logged in as an institution when first launching the app. xRapid creates an account for your institution and delivers by email a username and password. The easiest is to copy the username and then the password from the email you have received. Upon logging in, your institution details, logo, etc... will be populated.
-
-This step is usually performed during installation and training.
-
 **Important**: one needs to be connected to the internet for this process to work.
 
 **Note**: one should only need to login once. Do not hesitate to contact us should some details be missing or incorrect.
 
-### 4.5. Performing an analysis
+### 6.3.3. Measurement screen
+
+Once the device is properly setup, one can proceed to performing diagnostics. The Measurement screen is obtained when the hexagonal Start Measurement button is tapped on the Main screen.
+
+When entering the Measurement screen, the microscope light source will turn on automatically. If it does not, the microscope is not properly connected to the iPad via Bluetooth or Ethernet, and the connection should be re-established. Notice that failure to establish connection with the microscope stops the user from entering in the Measurement screen.
+
+#### 6.3.3.1. Test identifier
+
+A default identifier (1) is automatically generated. It is grayed-out, and can be changed. Tapping this identifier will show the iOS keyboard (2), tapping the small X icon at the right of the field will dismiss all changes and the keyboard. Any identifier longer than one character can be entered. 
+
+The case presented in Figure 6.11. enables the use of sequences: any string followed by a dash - and a number will be automatically followed by the the same string with the number incremented by one when the next test is launched. This is particularly useful when a file contains several samples with a resulting large number of slides. Notice that the next time the analysis is launched, the test identification will now default to the next increment, if a dash was present in the first test diagnostic. It is possible to start a sequence at any number following the dash: this can be useful when a job is split in more than one series.
+
+![][image-17]
+
+Figure 6.12. Starting a diagnostic with changing the default test identification
+
+#### 6.3.3.2. Stage movement control
+
+The usual sequence is shown Figure 6.12: tap the Start Diagnostic hexagonal button (1), after which the diagnostic sequence executes automatically.
+
+One can adjust the position of the slide by tapping the Controls icon (2), which will bring up the in-plane control (3) and focus control (4). One can return to the start button by hitting the cross (5).
+
+![][image-18]
+
+Figure 6.13. Illustration of entering a Diagnostic screen (right), start position being set up (middle), and diagnostic running (right)
+
+#### 6.3.3.3. Trace and focus finding
+
+Because finding the trace can be challenging, xRmold has been designed to find the trace automatically, provided there is one: this procedure will likely fail on some clearance samples. The microscope features a second objective (10× Olympus objective) and a motorized turret that rotates between 40× and 10× objectives. Two options are available in the `Settings` of xRmold, under `Parameters`: if `Combine Trace and Focus` is switched on, a single button will appear: `Do Trace`. Otherwise two buttons will be available, `Find Trace` and `Focus`. With a single button configuration, the microscope will:
+- rotate to the 10× objective
+- proceed in finding the trace
+- position the slide at the beginning of the trace
+- rotate back to 40× objective
+- focus.
+The preferred operation, however, is to use two buttons. One can then find the trace and adjust the start position using the 10× objective and the fine movement controls as a first step. When the position is correct, one hits the `Find Focus` button which rotates the turret back to the 40× objective.
+
+#### 6.3.3.4. Measurement path
+
+xRmold enables two measurement paths, which are either linear (50 steps in linear sequence) or not (150 steps in a serpentine path). From experience, well-prepared Air-O-Cell slides are performing well with 50 steps, while Zefon slides require 150 steps: this is due to the dimensions and characteristics of the impacter.
+
+The diagnostic will stop when the complete number of steps (50 or 150) has been reached. The analysis can be stopped at any time by means of the `Stop` button (8). Confirmation is required when the `Stop` button is tapped.
+
+
+#### 6.3.3.5. Performing an analysis
+
 The method is analogous to that used by a human analyst:
 - position the microscope slide either manually or using the screen controls at the beginning of the trace: is is useful to rotate the turret out of position and adjust the position of the slide to the light spot of the condenser
 - Adjust the focus manually
 - Hit the start button.
 The slide will then be scanned though 150 steps or 50 steps, depending on the option chosen. The slide is scanned through the thickness, and one will see the objects/spores blur in and out. A step is considered out-of-focus when the objects/spores do not get though a position of focus during the through thickness scan. The slide scanning process includes an auto-focus adjustment from step to step.
 
-### 4.6. Results
+#### 6.3.3.6. Results
 
 Results are presented according to the **ASTM D7391**. You will find the raw counts, the spores per volume if the volume was indicated, as well as the total percentage in the table. We also indicate the percentage of coverage of the trace.
 
 The results can be exported as an image or a PDF, or to Excel as a comma separated value file (CSV option).
 
-## 5. ARTIFICIAL INTELLIGENCE
+### 6.3.4. Results screen
 
-### 5.1. Basics
+### 6.3.5. Photos screen
+
+## 6.4. ARTIFICIAL INTELLIGENCE
+
+### 6.4.1. Basics
 
 The app xRmold uses a heavily customized version of an object detector, which has two functionalities:
 - detect the position of the objects the AI has been trained to recognize
 - Classify those objects, i.e. attribute them a label and a confidence.
 
-### 5.2. Confidence
+### 6.4.2. Confidence
 
 The confidence is an agnostic measurement of probability that the AI calculates, it goes from 0 to 100%. In essence, we chose to limit the mold spores found to certain thresholds of confidence, in order to limit the number of false positives and false negatives. To do so, we did accept a certain level of “Unidentified Spores”, which you will see in the report. Those represent the entities that the AI identified, perhaps rightly, that the classifier could not sort with an acceptable confidence.
 
 In practice, we have experienced great difficulties between some classes, and they mostly come from spores that are somewhat damaged: a squished stachybotrys can ressemble a chaetomium, and a folded chaetomium can ressemble a stachybotrys, for example.
 
-### 5.3. Reviewing the results
+### 6.4.3. Reviewing the results
 
 Tapping on the images icon from the main results view will bring up a collection view of all the fields captured. One can select the fields from the classes they include by long-pressing the classes selector at the bottom right. Selecting and de-selecting classes updates the underlying images. This is particularly useful to find some interesting fields.
 
 The images show classes and their confidence when this option is selected.
 
-### 5.4. Species and legend
+### 6.4.4. Species and legend
 
 The following spores are identifiable in the current version:
 - ULOBO: Ulocladium botrytis
@@ -639,7 +653,7 @@ The following spores are identifiable in the current version:
 - SCOBR: scopurialopsis brevicompactum
 - FUSSO: fusarium solani
 
-### 5.5. How the AI is trained
+### 6.4.5. How the AI is trained
 
 Each specie is cultured and sampled at 3-5, 7-10 and 15 days on at least 3 slides. At least 150 fields are captured on each slide. Each field containing spores is manually annotated, where each spore is identified by position and class. The AI is trained on all the fields and the selected classes at once — about 30’000 samples. A full training takes about 3 days. Transfer learning, when adding for example 1-2 classes to the dataset, takes about half a day if all goes well.
 
@@ -647,9 +661,52 @@ The AI is tested and validated on independent sets from training, created using 
 
 **Note**: it is always useful to have an independent validation set from field slides, we will welcome images without annotations but description to this effect.
 
-**Note**: it will be shown in the app utilization section how to change the labels of a spore. When this is performed, the image is sent back to our servers, and may be used in our training set after the change has been confirmed by our analysts.
+**Note**: it is be shown in the app utilization section (6.3) how to change the labels of a spore. When this is performed, the image is sent back to our servers, and may be used in our training set after the change has been confirmed by our analysts.
 
-# 6. XRMold app
+## 6.5. Standard care and cleaning of the unit
+
+### 6.5.1. Standard care
+
+For optimal results, xRmold must be used in a microscopy environment, that means:
+
+-   Air regulated area to avoid dust.
+-   No vibration. The xRfiber platform must be installed in a stable and robust stage, uncoupled from floor vibrations.
+
+Additionally, the microscope must be covered by its plastic pouch when not in use, to avoid the deposition of dust. Furthermore, the silicon tip must be inserted in the hole of the eyepiece of the trinocular tube when the iPhone/iPad is not on its cradle.
+
+### 6.5.2. Cleaning the microscope
+
+**WARNING**: Do not use detergents or aggressive liquids to clean the xRmold microscope or its optics. A compressed air spray (not included) and the lens cleaning paper (included) are sufficient to perfectly clean the xRfiber platform.
+
+Process for cleaning the xRfiber platform
+
+1.  Remove the cradle
+	1.  Begin by the socket head screws that they maintain the cradle support in the microscope head.
+	2.  Remove the cradle with the eyepiece.
+	3.  Loosen the three screws which maintain the eyepiece on the cradle cylinder and remove the eyepiece.
+	4.  Clean the eyepiece using a dust air spray, clean it on its top and on its bottom.
+	5.  If some impurities remain on the lens, use a lens cleaning paper (always with linear motion), and use the compressed air spray when finished.
+2.  Remove the trinocular tube by loosening manually the two screws maintaining it
+3.  Use the compressed air spray to clean the glass on the top of the head.
+4.  Remove the head of the microscope using a 2.5mm Allen wrench
+	1.  Remove the Olympus objective from the turret.
+	2.  Turn the turret to place the opened orifice in line with the optic train. From the top of the microscope, use the compressed air spray to clean the microscope and the turret.
+5.  Reassemble the head of the microscope.
+6.  Reassemble the trinocular tube.
+7.  Place the eyepiece in the cradle cylinder and slowly fasten the 3 screws to maintain it.
+8.  Reassemble the complete cradle and maintain it fastening both screws on the microscope head.
+9.  Use the compressed air spray to clean the objective and reassemble it on the turret.
+10. Use the compressed air to remove dust on:
+	1. The lenses on the top of the condenser.
+	2. The glass on the top of the light diaphragm.
+
+If both the front oculars are in use, to clean them:
+-   Remove both oculars using a 1.5mm Allen wrench.
+-   Use the compressed air spray to clean inside the microscope head oculars orifices.
+-   Use the compressed air spray to clean both oculars on their top and on their bottom. If some impurities are still existing, use the lens cleaning paper to remove them (every time with linear motion), and use the air compressed spray to finalize the oculars cleaning.
+
+The xRmold microscope is now normally clean to proceed with the analysis. Do not forget to clean your Apple device camera lens using the lens cleaning paper.
+
 
 [1]:	https://www.amazon.com/Lactophenol-Cotton-Fungal-Hardy-Diagnostics/dp/B0732CDHHT
 [2]:	https://www.sigmaaldrich.com/catalog/product/sial/61335?lang=fr&region=FR
@@ -674,3 +731,5 @@ The AI is tested and validated on independent sets from training, created using 
 [image-14]:	https://xrapid-group.github.io/xrfiber/Pictures/Ethernet_connection.mp4
 [image-15]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_9.png
 [image-16]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_10.png
+[image-17]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_11.png
+[image-18]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_12.png
