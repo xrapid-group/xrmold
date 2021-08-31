@@ -732,6 +732,7 @@ The xRmold microscope is now normally clean to proceed with the analysis. Do not
 [4]:	mailto:%20support@xrapid-group.com
 [5]:	mailto:support@xrapid-group.com
 [6]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
+[7]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_13.png
 
 [image-1]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
 [image-2]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_1.png
@@ -751,3 +752,7 @@ The xRmold microscope is now normally clean to proceed with the analysis. Do not
 [image-16]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_10.png
 [image-17]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_11.png
 [image-18]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_12.png
+[image-19]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_13.png
+[image-20]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_14.png
+[image-21]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_15.png
+[image-22]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_16.png
