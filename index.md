@@ -2,7 +2,7 @@
 
 Document version: 1.0
 
-App Version: 1.0 Build xxx
+App Version: 1.0.0 Build 67.
 
 ## 1. PURPOSE
 
@@ -617,15 +617,27 @@ The results can be exported as an image or a PDF, or to Excel as a comma separat
 
 ### 6.3.4. Results screen
 
+The results screen presents all the spores identified by count, counts per volume if the volume was entered, and percentage. The table can be scrolled. Button `1` opens a Photos screen, while button `2`  enables to print and/or share the results. Tapping the button `2` opens a dialog `6` while tapping the button again `5` or anywhere on screen not in the dialing enables to close it again. `Sharing as a PDF` is illustrated here. `Sharing as a CSV file` opens a similar dialog to save the file in location, or open it in your spreadsheet editor of choice.
+
+Text fields `3` and `4` are not editable.
+
+This view can be dismissed to go back to the Tests Log by tapping button `8`.
+
 ![][image-19]
 
 Figure 6.13. Results screen
 
+**Note**: the spreadsheet editors on iPadOS are **Numbers** (Apple Inc., free) and **Excel** (Microsoft, free viewer and subscription required to edit).
+
 ### 6.3.5. Photos screens
+
+Tapping button `1` on the previous Results screen opens the Photos screen, as shown below. The control at the bottom right lets one quickly review the results, by selecting only the positive or the negative fields. An additional picked is obtained by long pressing on the Positives index again after selecting it (a long press is about 2 seconds). A pop up with the species detected on this sample will show, one can tick/un-tick the species and the photos will update accordingly. Finally, tapping on an image brings up said image, where boxes delimit the spores identified in this field. Moving to next or previous field is achieved by swapping on the image right or left, respectively.
 
 ![][image-20]
 
 Figure 6.14. Photos screens
+
+Photos can be multiple selected for printing, exporting and the like: tap the select button at the bottom left of the screen, select the images by ticking/un-ticking them and hit the share button. Notice there is a limit due to iPadOS of about 50 images when exporting.
 
 ![][image-21]
 
@@ -633,9 +645,19 @@ Figure 6.15. Selecting photos for sharing/export
 
 ### 6.3.4. Tests log screen
 
+The tests log screen is accessed from the main screen — the large button at the bottom. It keeps a log of all the tests performed on this iPad in reverse chronological order. Tapping any line brings up the Results of this test. Diagnostics are presented with the number of spores detected in italics, together with the number of fields.
+
+Exporting or printing multiple test results at once is straightforward: tap the select button and tick/un-tick the desired tests. One easy way to eg print all tests from the same day is to tick the day, as shown in the Figure below.
+
 ![][image-22]
 
 Figure 6.16. Test log, selecting and printing or archiving results by date
+
+### 6.3.5. Image formats and Device space
+
+Images are kept uncompressed depending on the space on the device. When the device space becomes low, images will begin to be compressed. This should not be apparent to the user. Images preferably uncompressed should be used when communicating with xRapid, as they can be re-run on our models. Compressing images takes them from about 3Mb to 300kb per image.
+
+Should the iPad run low on space, do not hesitate to contact xRapid support.
 
 ## 6.4. ARTIFICIAL INTELLIGENCE
 
@@ -732,7 +754,6 @@ The xRmold microscope is now normally clean to proceed with the analysis. Do not
 [4]:	mailto:%20support@xrapid-group.com
 [5]:	mailto:support@xrapid-group.com
 [6]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
-
 
 [image-1]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
 [image-2]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_1.png
