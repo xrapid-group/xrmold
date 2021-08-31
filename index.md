@@ -617,6 +617,7 @@ The results can be exported as an image or a PDF, or to Excel as a comma separat
 
 ### 6.3.4. Results screen
 
+
 Figure 6.13. Results screen
 
 ### 6.3.5. Photos screens
@@ -744,7 +745,7 @@ The xRmold microscope is now normally clean to proceed with the analysis. Do not
 [image-16]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_10.png
 [image-17]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_11.png
 [image-18]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_12.png
-[image-19]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_13.png
-[image-20]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_14.png
-[image-21]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_15.png
-[image-22]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_16.png
+[image-19]: https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_13.png
+[image-20]: https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_14.png
+[image-21]: https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_15.png
+[image-22]: https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_16.png
