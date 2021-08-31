@@ -474,7 +474,7 @@ Once a device is connected, the button (1) being circled, tapping the Bluetooth 
 
 ![][image-15]
 
-Figure 6.10. Main screen in the disconnected state (left), Bluetooth connected state (middle) and Ethernet connected state (right) 
+Figure 6.9. Main screen in the disconnected state (left), Bluetooth connected state (middle) and Ethernet connected state (right) 
 
 #### 6.3.1.2. Elements
 
@@ -510,7 +510,7 @@ The settings/options have 4 main categories, reached by tapping on the segmented
 
 ![][image-16]
 
-Figure 6.11. Settings screens with the Practitioner (left), Diagnostic (center left),  Print (center right) and Institution settings.
+Figure 6.10. Settings screens with the Practitioner (left), Print (center left),  Parameters (center right) and Institution (right) settings.
 
 Notice at the bottom (8) the version and Build number between parentheses — communicate those to xRapid when requesting support.
 
@@ -572,7 +572,7 @@ The case presented in Figure 6.11. enables the use of sequences: any string foll
 
 ![][image-17]
 
-Figure 6.12. Starting a diagnostic with changing the default test identification
+Figure 6.11. Starting a diagnostic with changing the default test identification
 
 #### 6.3.3.2. Stage movement control
 
@@ -582,7 +582,7 @@ One can adjust the position of the slide by tapping the Controls icon (2), which
 
 ![][image-18]
 
-Figure 6.13. Illustration of entering a Diagnostic screen (right), start position being set up (middle), and diagnostic running (right)
+Figure 6.12. Illustration of entering a Diagnostic screen (right), start position being set up (middle), and diagnostic running (right)
 
 #### 6.3.3.3. Trace and focus finding
 
@@ -617,7 +617,18 @@ The results can be exported as an image or a PDF, or to Excel as a comma separat
 
 ### 6.3.4. Results screen
 
-### 6.3.5. Photos screen
+Figure 6.13. Results screen
+
+### 6.3.5. Photos screens
+
+Figure 6.14. Photos screens
+
+
+Figure 6.15. Selecting photos for sharing/export
+
+### 6.3.4. Tests log screen
+
+Figure 6.16. Test log, selecting and printing or archiving results by date
 
 ## 6.4. ARTIFICIAL INTELLIGENCE
 
