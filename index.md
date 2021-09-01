@@ -24,6 +24,10 @@ If an information is requested, particularly if relevant and not found in the do
 
 xRapid Group has developed a fully automated microscope, patent pending, which consists in a phase contrast microscope (PCM) retrofitted with a set of motors to control the stage movement in three orthogonal directions (x, y and z) with various accuracies. For mold spores analysis, the microscope is operated in bright field mode (the phase contrast ring is removed from the phase condenser). This enables a full sample to be imaged within a few minutes. A series of images are taken by an iPad at increasing depths, from which an autofocus measure is calculated to image the next field. At the same time, a convolutional neural network (CNN) is used for our AI to characterize the objects in the field of view. All the analysis is performed locally on the device, none of the images are uploaded to a server, so that remote work in a poorly connected area is permitted. While we usually refer to AI as Deep Learning, one should notice that xRmold system is not self-learning: all the data has been extracted by humans, and validated by humans. The system shipped is not evolving between updates of the app, which enables to guarantee its performance and pass an eventual certification.
 
+This is best exemplified by a demonstration video, as shown below.
+
+![][image-23]
+
 ## 2.2. Equipment specifications
 
 ### 2.2.1. General
