@@ -661,7 +661,15 @@ Exporting or printing multiple test results at once is straightforward: tap the 
 
 Figure 6.16. Test log, selecting and printing or archiving results by date
 
-### 6.3.5. Image formats and Device space
+### 6.3.5. Changing spore labels
+
+Though it has been trained on a very large set of samples and images, the artificial intelligence detection engine can get confused when it does not identify properly the features of some spores. 
+
+![][image-24]
+
+Figure 6.17. Changing spore labels
+
+### 6.3.6. Image formats and Device space
 
 Images are kept uncompressed depending on the space on the device. When the device space becomes low, images will begin to be compressed. This should not be apparent to the user. Images preferably uncompressed should be used when communicating with xRapid, as they can be re-run on our models. Compressing images takes them from about 3Mb to 300kb per image.
 
