@@ -6,7 +6,7 @@ App Version: 1.0.0 Build 67.
 
 ## 1. PURPOSE
 
-This document describes the standard operating procedure of the xRmold platform.
+This document describes the standard operating procedure of the xRmold platform. This document is kept in synchronization with the xRmold app.
 
 xRmold comprises a motorized microscope that is wirelessly operated by an iPad, and a software to drive the microscope. It is dedicated to the measurement of mold spores in air samples, following the ASTM standard D7391. The microscope is operated bright field, the images are captured by the iPad and analyzed locally by an embedded artificial intelligence.
 
@@ -26,7 +26,7 @@ xRapid Group has developed a fully automated microscope, patent pending, which c
 
 This is best exemplified by a demonstration video, as shown below.
 
-![][image-23]
+![][image-1]
 
 ## 2.2. Equipment specifications
 
@@ -139,8 +139,7 @@ Day2: Using protective gloves, add phenol crystals to lactic acid in a glass bea
 
 #### 2.4.1.4. Procedure of Lactophenol Cotton Blue (LPCB) Staining
 
-This is the procedure that was used to mount cultures from Pétri dishes.
-
+This is the procedure that was used to mount cultures from Pétri dishes:
 - On a clean microscopic glass slide, add a drop of 70% ethanol
 - Add the fungal specimen to the drop of alcohol using a sterile mounter such as an inoculation loop (from solid medium), depending on the sample of use.
 - Tease the fungal sample of the alcohol using a needle mounter, to ensure the sample mixes well with the alcohol.
@@ -149,9 +148,16 @@ This is the procedure that was used to mount cultures from Pétri dishes.
 - Examine the stain microscopically at 40×, to observe for fungal spores and other fungal structures.
 - If the slide is acceptable, capture 150 fields using xRmold, less than 15 minutes after the slide has been mounted.
 
-The procedure used to mount samples from air cassettes is as follows.
+The procedure used to mount samples from air cassettes is as follows:
+- Open the cassette with a scalpel
+- Remove the slide sample with gel from the cassette — notice the trace in the middle appears matte on the shiny background of the gel
+- Eventually mark the beginning of the trace with a second (sterile) scalpel
+- Apply a small droplet of lactophenol cotton blue on the slide
+- Hold the sample slides gel facing the microscope slide, from one side, and let it fall in place gently, taking care of not creating air bubbles
+- Apply a light pressure on the slide to squeeze out completely the lactohenol cotton blue.
+The spread of LPCB will vary depending on the quantity applied and quality of the adhesive.
 
-**TODO: add process for air cassettes**
+A summary quick-sheet can be downloaded at this link.
 
 #### 2.4.1.5. Limitations
 
@@ -172,9 +178,7 @@ The procedure used to mount samples from air cassettes is as follows.
 
 xRmold is set to analyze samples that have been laid out **horizontally** only. The microscope will scan 150 fields horizontally to capture a full trace of 10mmx1mm. The next Figure shows the correct geometry for the mount.
 
-![][image-1]
-
-**TODO: this figure must be changed to reflect the 50 fields option**
+![][image-2]
 
 **Note**: for the sake of simplicity, it is not envisaged to enable a vertical mount at the moment. Do not hesitate to contact us if this is standard practice in your laboratory. 
 
@@ -256,13 +260,13 @@ The xRfiber/xRmold microscope components are shown in Figure 6.1.
 19. iPhone/iPad Cradle
 20. Ocular Locking Screws
 
-![][image-2]
+![][image-3]
 
 Figure 6.1. xRfiber Microscope components
 
 Additional components in the box are shown in Figure 6.2.
 
-![][image-3]
+![][image-4]
 
 Figure 6.2. Additional components in the box
 
@@ -290,7 +294,7 @@ Finally, for xRmold, an optional motorized turret is present on the microscope (
 
 Upon opening your xRfiber unit, please use the checklist provided to confirm all items have been received: the checklist is on the top of the box when opening it. If something is missing, please contact [support@xrapid-group.com][5].
 
-![][image-4]
+![][image-5]
 
 Figure 6.3. box contents
 
@@ -306,7 +310,7 @@ When deciding where to place the xRfiber Platform, consider the following:
 
 Verify that the head of the microscope (A) is aligned with the body (B). If not, slide the head into alignment with the body by hand: apply a slight rotation of the head to align its edges with those of the body.
 
-![][image-5]![][image-6]
+![][image-6]![][image-7]
 
 Figure 6.4. Alignment of the microscope head
 
@@ -314,7 +318,7 @@ Verify that the adjustable C-Mount Adapter (n°18) is aligned with the head of t
 
 Remove both Ocular Covers (n°35). Eventually use a air duster (not included) in the ocular openings to ensure that they are free of debris and dust.
 
-![][image-7] ![][image-8]
+![][image-8] ![][image-9]
 
 Figure 6.5. Installation of the eyepieces
 
@@ -387,7 +391,7 @@ Remove the C-Mount Adapter Cap and align the Cradle with the tube of the adapter
 
 Attach the Cradle to the microscope using the two screws (n°36) you removed.
 
-![][image-9] ![][image-10] ![][image-11] ![][image-12]
+![][image-10] ![][image-11] ![][image-12] ![][image-13]
 
 Figure 6.7. Installation of the iPhone cradle
 
@@ -409,7 +413,7 @@ Figure 6.7. Installation of the iPhone cradle
 
 The ideal situation is shown below: the device both on stage and in cradle should show the same orientation, leveled at zero degrees in all directions.
 
-![][image-13]
+![][image-14]
 
 Figure 6.7. unbalanced (left) and perfectly flat orientations of the iPhone in its cradle and on stage
 
@@ -451,7 +455,7 @@ When the microscope is to be operated through a wired connection, one follows th
 		- Configure Proxy: Off
 From that point onwards, when the Ethernet cable is connected to the iPad, the microscope will establish a network connection first.
 
-![][image-14]
+![][image-15]
 
 Video 6.1. setting up the Ethernet connection in iPad’s settings
 
@@ -476,7 +480,7 @@ Once a device is connected, the button (1) being circled, tapping the Bluetooth 
 
 **NOTE**: the Bluetooth functionality lets us discover the device based on the strength of the signal. If two devices are more than one meter apart, the iPhone/iPad will find the correct microscope, i.e. the microscope it is sitting on. If devices are closer, some mixing or confusion of signals may occur, and the device will have to be checked and connected manually using the pop up menu.
 
-![][image-15]
+![][image-16]
 
 Figure 6.9. Main screen in the disconnected state (left), Bluetooth connected state (middle) and Ethernet connected state (right) 
 
@@ -512,7 +516,7 @@ The light button (10) is used to switch on/off the microscope light source. When
 
 The settings/options have 4 main categories, reached by tapping on the segmented control: Practitioner (1), Print (2), Parameters (3), Institution (4). Parameters are related to the motorized turret, and only accessible when the microscope is connected to the iPad via an Ethernet cable.
 
-![][image-16]
+![][image-17]
 
 Figure 6.10. Settings screens with the Practitioner (left), Print (center left),  Parameters (center right) and Institution (right) settings.
 
@@ -574,7 +578,7 @@ A default identifier (1) is automatically generated. It is grayed-out, and can b
 
 The case presented in Figure 6.11. enables the use of sequences: any string followed by a dash - and a number will be automatically followed by the the same string with the number incremented by one when the next test is launched. This is particularly useful when a file contains several samples with a resulting large number of slides. Notice that the next time the analysis is launched, the test identification will now default to the next increment, if a dash was present in the first test diagnostic. It is possible to start a sequence at any number following the dash: this can be useful when a job is split in more than one series.
 
-![][image-17]
+![][image-18]
 
 Figure 6.11. Starting a diagnostic with changing the default test identification
 
@@ -584,7 +588,7 @@ The usual sequence is shown Figure 6.12: tap the Start Diagnostic hexagonal butt
 
 One can adjust the position of the slide by tapping the Controls icon (2), which will bring up the in-plane control (3) and focus control (4). One can return to the start button by hitting the cross (5).
 
-![][image-18]
+![][image-19]
 
 Figure 6.12. Illustration of entering a Diagnostic screen (right), start position being set up (middle), and diagnostic running (right)
 
@@ -627,7 +631,7 @@ Text fields `3` and `4` are not editable.
 
 This view can be dismissed to go back to the Tests Log by tapping button `8`.
 
-![][image-19]
+![][image-20]
 
 Figure 6.13. Results screen
 
@@ -637,13 +641,13 @@ Figure 6.13. Results screen
 
 Tapping button `1` on the previous Results screen opens the Photos screen, as shown below. The control at the bottom right lets one quickly review the results, by selecting only the positive or the negative fields. An additional picked is obtained by long pressing on the Positives index again after selecting it (a long press is about 2 seconds). A pop up with the species detected on this sample will show, one can tick/un-tick the species and the photos will update accordingly. Finally, tapping on an image brings up said image, where boxes delimit the spores identified in this field. Moving to next or previous field is achieved by swapping on the image right or left, respectively.
 
-![][image-20]
+![][image-21]
 
 Figure 6.14. Photos screens
 
 Photos can be multiple selected for printing, exporting and the like: tap the select button at the bottom left of the screen, select the images by ticking/un-ticking them and hit the share button. Notice there is a limit due to iPadOS of about 50 images when exporting.
 
-![][image-21]
+![][image-22]
 
 Figure 6.15. Selecting photos for sharing/export
 
@@ -653,7 +657,7 @@ The tests log screen is accessed from the main screen — the large button at th
 
 Exporting or printing multiple test results at once is straightforward: tap the select button and tick/un-tick the desired tests. One easy way to eg print all tests from the same day is to tick the day, as shown in the Figure below.
 
-![][image-22]
+![][image-23]
 
 Figure 6.16. Test log, selecting and printing or archiving results by date
 
@@ -759,26 +763,27 @@ The xRmold microscope is now normally clean to proceed with the analysis. Do not
 [5]:	mailto:support@xrapid-group.com
 [6]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
 
-[image-1]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
-[image-2]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_1.png
-[image-3]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_2.png
-[image-4]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_3.png
-[image-5]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_4_a.png
-[image-6]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_4_b.png
-[image-7]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_5_a.png
-[image-8]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_5_b.png
-[image-9]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_a.png
-[image-10]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_b.png
-[image-11]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_c.png
-[image-12]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_d.png
-[image-13]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_8.png
-[image-14]:	https://xrapid-group.github.io/xrfiber/Pictures/Ethernet_connection.mp4
-[image-15]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_9.png
-[image-16]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_10.png
-[image-17]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_11.png
-[image-18]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_12.png
-[image-19]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_13.png
-[image-20]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_14.png
-[image-21]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_15.png
-[image-22]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_16.png
-[image-23]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_DEMO_FINAL.m4v
+[image-1]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_DEMO_FINAL.m4v
+[image-2]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
+[image-3]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_1.png
+[image-4]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_2.png
+[image-5]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_3.png
+[image-6]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_4_a.png
+[image-7]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_4_b.png
+[image-8]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_5_a.png
+[image-9]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_5_b.png
+[image-10]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_a.png
+[image-11]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_b.png
+[image-12]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_c.png
+[image-13]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_7_d.png
+[image-14]:	https://xrapid-group.github.io/xrfiber/Pictures/Figure_6_8.png
+[image-15]:	https://xrapid-group.github.io/xrfiber/Pictures/Ethernet_connection.mp4
+[image-16]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_9.png
+[image-17]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_10.png
+[image-18]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_11.png
+[image-19]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_12.png
+[image-20]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_13.png
+[image-21]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_14.png
+[image-22]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_15.png
+[image-23]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_16.png
+[image-24]:	https://xrapid-group.github.io/xrmold//Pictures/QUICK_GUIDE_L-US-3.pdf
