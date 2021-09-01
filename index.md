@@ -663,11 +663,18 @@ Figure 6.16. Test log, selecting and printing or archiving results by date
 
 ### 6.3.5. Changing spore labels
 
-Though it has been trained on a very large set of samples and images, the artificial intelligence detection engine can get confused when it does not identify properly the features of some spores. 
+Though it has been trained on a very large set of samples and images, the artificial intelligence detection engine can get confused when it does not identify properly the features of some spores. The trained analyst has the possibility to change the category and therefore label of the spore. To do so, when a mis-labeled or unknown spore has been identified:
+- zoom in on the spore to make sure your diagnostic is correct, by pinching out on the image
+- Select the spore by long pressing on it
+- A pop-up with all the spore genus and species will appear
+- Select the correct one from the list.
+This process is illustrated in the Figure below.
 
 ![][image-24]
 
 Figure 6.17. Changing spore labels
+
+Importantly, for continuous improvement processes, the image with corrected label will be uploaded anonymously to xRapid’s server. It will then be verified by a couple of trained analysts, and if the change is confirmed to be right, the image will then be versed into xRmold’s training set.
 
 ### 6.3.6. Image formats and Device space
 
