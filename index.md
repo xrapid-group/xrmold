@@ -157,7 +157,7 @@ The procedure used to mount samples from air cassettes is as follows:
 - Apply a light pressure on the slide to squeeze out completely the lactohenol cotton blue.
 The spread of LPCB will vary depending on the quantity applied and quality of the adhesive.
 
-A summary quick-sheet can be downloaded at ![this link][image-24].
+A summary quick-sheet can be downloaded at ![this link](image-24).
 
 #### 2.4.1.5. Limitations
 
