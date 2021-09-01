@@ -372,6 +372,13 @@ While there is a certain leeway ni operating xRfiber with a quite-not-perfect il
 
 We recommend that the user familiarizes with Koehler illumination by using the excellent app “Koehler Tutor”, which can be downloaded from the App Store at this [link][7] if it is not installed on your iPad already.
 
+#### Illumination dependencies
+
+The resolution of the spores strongly depends upon a proper Koehler illumination. A poor setup will result in poor results. It is therefore advised to check the position of the condenser at least once a day.
+
+Similarly, the best results are obtained when the illumination is homogeneous in the field observed. If this is not the case, results may be compromised.
+
+Finally, the user is invited to report any visible deterioration of the light source. The xRmold unit uses prime LED, and though its life expectancy is supposed reach several years, do not hesitate to contact us should any variation in temperature or brightness become apparent.
 
 6.  INSTALLING THE CRADLE (N°19)
 
@@ -674,13 +681,19 @@ This process is illustrated in the Figure below.
 
 Figure 6.17. Changing spore labels
 
-Importantly, for continuous improvement processes, the image with corrected label will be uploaded anonymously to xRapid’s server. It will then be verified by a couple of trained analysts, and if the change is confirmed to be right, the image will then be versed into xRmold’s training set.
+Importantly, for continuous improvement processes, the image with corrected label will be uploaded anonymously to xRapid’s server. It will then be verified by a couple of trained analysts, and if the change is confirmed to be right, the image will then be versed into xRmold’s training set and used to improve the AI’s accuracy.
 
 ### 6.3.6. Image formats and Device space
 
 Images are kept uncompressed depending on the space on the device. When the device space becomes low, images will begin to be compressed. This should not be apparent to the user. Images preferably uncompressed should be used when communicating with xRapid, as they can be re-run on our models. Compressing images takes them from about 3Mb to 300kb per image.
 
 Should the iPad run low on space, do not hesitate to contact xRapid support.
+
+### 6.3.7. Image resolution
+
+The image resolution can be deduced by grabbing an image of a calibrated grid. In all cases, it should be between 5.2 and 5.3 pixels per micrometer with the 40× objective.
+
+Importantly, the resolution is checked for each microscope, but the results of the AI diagnostic do not depend strongly on it. The detector is essentially size agnostic.
 
 ## 6.4. ARTIFICIAL INTELLIGENCE
 
