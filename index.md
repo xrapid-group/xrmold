@@ -157,7 +157,7 @@ The procedure used to mount samples from air cassettes is as follows:
 - Apply a light pressure on the slide to squeeze out completely the lactohenol cotton blue.
 The spread of LPCB will vary depending on the quantity applied and quality of the adhesive.
 
-A summary quick-sheet can be downloaded at ![this link](image-24).
+A summary quick-sheet can be downloaded at [this link][1].
 
 #### 2.4.1.5. Limitations
 
@@ -171,8 +171,8 @@ A summary quick-sheet can be downloaded at ![this link](image-24).
 
 #### 2.4.1.6. Where to get LPCB
 
-- Lactophenol Cotton Blue, Fungal Stain, 15ml, by [Hardy Diagnostics][1]
-- Lactophenol blue solution [Merck/Sigma Aldrich][2]
+- Lactophenol Cotton Blue, Fungal Stain, 15ml, by [Hardy Diagnostics][2]
+- Lactophenol blue solution [Merck/Sigma Aldrich][3]
 
 ### 2.4.2. Mount
 
@@ -199,7 +199,7 @@ xRmold is set to analyze samples that have been laid out **horizontally** only. 
 -   Only use special lens paper to clean the optics.
 -   Never touch an electric outlet with wet hands.
 -   Do not open the back of the microscope without being grounded, as this may result in electric shocks/hazards.
--  Contact [support@xrapid-group.com][3] in case there is any doubt.
+-  Contact [support@xrapid-group.com][4] in case there is any doubt.
 
 # 4. PREREQUISITES
 
@@ -218,7 +218,7 @@ The following items are required for the operation of xRMold platform.
 
 It is the responsibility of the user to ensure that:
 
--   The microscope unit is functioning properly, and report to [support@xrapid-group.com][4] in case there is any doubt that it does
+-   The microscope unit is functioning properly, and report to [support@xrapid-group.com][5] in case there is any doubt that it does
 -   The power supply is connected to a stable source of 110V or 220V, depending on the local environment
 -   The microscope unit it set in a proper environment, that the optics are covered and dust protected when the unit is not in use (see section 6.1)
 -   A field blank is used regularly to check that the count is adequate, i.e. it yields zero spores counted. Alternatively, check that there are no fixed elements in the field images, which would indicate dirty optics
@@ -292,7 +292,7 @@ Finally, for xRmold, an optional motorized turret is present on the microscope (
 
 1.  OPENING THE BOX
 
-Upon opening your xRfiber unit, please use the checklist provided to confirm all items have been received: the checklist is on the top of the box when opening it. If something is missing, please contact [support@xrapid-group.com][5].
+Upon opening your xRfiber unit, please use the checklist provided to confirm all items have been received: the checklist is on the top of the box when opening it. If something is missing, please contact [support@xrapid-group.com][6].
 
 ![][image-5]
 
@@ -370,7 +370,7 @@ xRmold uses the same Olympus x40 objective for mold diagnostic as xRfiber: this 
 
 While there is a certain leeway ni operating xRfiber with a quite-not-perfect illumination of the microscope (note: not for chysotile samples!), this is not the case for xRmold, where the condenser must be perfectly aligned and spaced vertically with the slide.
 
-We recommend that the user familiarizes with Koehler illumination by using the excellent app “Koehler Tutor”, which can be downloaded from the App Store at this [link][6] if it is not installed on your iPad already.
+We recommend that the user familiarizes with Koehler illumination by using the excellent app “Koehler Tutor”, which can be downloaded from the App Store at this [link][7] if it is not installed on your iPad already.
 
 
 6.  INSTALLING THE CRADLE (N°19)
@@ -756,12 +756,13 @@ If both the front oculars are in use, to clean them:
 The xRmold microscope is now normally clean to proceed with the analysis. Do not forget to clean your Apple device camera lens using the lens cleaning paper.
 
 
-[1]:	https://www.amazon.com/Lactophenol-Cotton-Fungal-Hardy-Diagnostics/dp/B0732CDHHT
-[2]:	https://www.sigmaaldrich.com/catalog/product/sial/61335?lang=fr&region=FR
-[3]:	mailto:%20support@xrapid-group.com
+[1]:	https://xrapid-group.github.io/xrmold//Pictures/QUICK_GUIDE_L-US-3.pdf "SOP Quick Sheet"
+[2]:	https://www.amazon.com/Lactophenol-Cotton-Fungal-Hardy-Diagnostics/dp/B0732CDHHT
+[3]:	https://www.sigmaaldrich.com/catalog/product/sial/61335?lang=fr&region=FR
 [4]:	mailto:%20support@xrapid-group.com
-[5]:	mailto:support@xrapid-group.com
-[6]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
+[5]:	mailto:%20support@xrapid-group.com
+[6]:	mailto:support@xrapid-group.com
+[7]:	https://apps.apple.com/fr/app/koehler-tutor/id1281328178?l=en
 
 [image-1]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_DEMO_FINAL.m4v
 [image-2]:	https://xrapid-group.github.io/xrmold/Pictures/XRmold_Sample_Geometry.png
@@ -786,4 +787,3 @@ The xRmold microscope is now normally clean to proceed with the analysis. Do not
 [image-21]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_14.png
 [image-22]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_15.png
 [image-23]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_16.png
-[image-24]:	https://xrapid-group.github.io/xrmold//Pictures/QUICK_GUIDE_L-US-3.pdf
