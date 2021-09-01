@@ -777,3 +777,4 @@ The xRmold microscope is now normally clean to proceed with the analysis. Do not
 [image-20]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_14.png
 [image-21]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_15.png
 [image-22]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_SOP_6_16.png
+[image-23]:	https://xrapid-group.github.io/xrmold//Pictures/xRmold_DEMO_FINAL.m4v
